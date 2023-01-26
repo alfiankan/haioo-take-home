@@ -1,0 +1,3 @@
+[submodule "shopping-cart-service"]
+	path = shopping-cart-service
+	url = https://github.com/alfiankan/shopping-cart-service
