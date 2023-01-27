@@ -30,7 +30,7 @@ COPY . . # menambahkan folder darihost ke dalam image/container yang akan dijaan
 
 RUN go mod tidy # install semua dependencies yang diperlukan
 
-RUN go build -o /app/indihome /go/src/github.com/telkomdev/indihome # build binary
+RUN go build -o /app/indihome . # build binary
 
 ENTRYPOINT ['/app/indihome'] # entrypointn atauu program pertama yang akan di jalankan ketika container up and running
 LISTEN 80 # buka port pada 80
